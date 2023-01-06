@@ -1,0 +1,53 @@
+import time
+
+class Robot():
+    name = "named"
+    power = False
+    current_speed = 0
+    battery_level = 0
+    states = ['shutown', 'running']
+    
+    def __init__(self, name):
+        if name:
+            self.name = name
+            self.power = True
+
+    def off(self):
+            self.power = False
+    
+    def charging(self):
+        while self.battery_level < 100:
+            time.sleep(0.1)
+            self.battery_level = self.battery_level +1
+            print(self.battery_level)
+    
+    def movement(self,speed):
+        if type(speed) == int:
+            self.current_speed = speed
+    
+    def stop(self):
+        self.current_speed = 0
+
+    def speed(self):
+        return self.current_speed
+
+    def resume(self):
+        print("Le nom du robot est %s"%(r.name))
+        print("Bobby power is %s"%(r.power))
+        print("Le pourcentage de la batterie est de " + f'{r.battery_level}'+"%.")
+        print ("La vitesse de déplacement est de %s"%r.speed())
+
+r = Robot(name='Bobby')
+print("Le nom du robot est %s"%(r.name))
+print("Bobby power is %s"%(r.power))
+r.off()	
+print("Le pourcentage de la batterie est de " + f'{r.battery_level}'+"%.")
+r.charging()
+print("Le pourcentage de la batterie est de " + f'{r.battery_level}'+"%.")
+print("Bobby power is %s"%(r.power))
+r.stop()
+print("La vitesse de déplacement est de %s"%r.speed())
+r.movement(80)
+print ("La vitesse de déplacement est de %s"%r.speed())
+print("\n")
+r.resume()
