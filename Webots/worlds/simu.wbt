@@ -1,0 +1,128 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "../protos/CircleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/appearances/protos/MattePaint.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/toys/protos/RubberDuck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/surveyor/protos/SurveyorSrv1.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.039984990743586954 0.18458360551801337 -0.9820031023826786 1.5592771724122092
+  position -0.5521082719517958 1.2264042034388047 2.534199617117404
+}
+TexturedBackground {
+  texture "noon_stormy_empty"
+}
+TexturedBackgroundLight {
+  luminosity 1.5
+}
+RubberDuck {
+  translation 3.718759788027108 3.733944312542087 2.178291744615935
+  rotation 0.02397878557362085 0.006550801808095827 0.9996910046799888 0.7167513746312776
+  name "duck1"
+  scale 7
+}
+RubberDuck {
+  translation -3.7373077847399463 -3.6948158099255 2.1782889751000507
+  rotation 0.005120890296364234 -0.008323564244681394 0.9999522462402078 -2.2165866530333167
+  name "duck3"
+  scale 7
+  bodyColor 0.878431 0.105882 0.141176
+}
+RubberDuck {
+  translation -3.7260990438371455 3.744012617653293 2.180441064788742
+  rotation 0.0065077321659014675 -0.001953249883937621 0.9999769168520579 2.4027460114008736
+  name "duck4"
+  scale 7
+  bodyColor 0.878431 0.105882 0.141176
+}
+RubberDuck {
+  translation 3.730020002137026 -3.696194486475251 2.1782876341135786
+  rotation 0.020259522558096047 -0.010755039489173446 -0.9997369058263801 0.7832097574642608
+  name "duck2"
+  scale 7
+  bodyColor 0.180392 0.760784 0.494118
+}
+CircleArena {
+  name "defeat arena"
+  radius 8
+  floorAppearance MattePaint {
+    baseColor 0.300008 0.0119936 0.0119936
+  }
+}
+SolidBox {
+  translation 0 0 2
+  rotation 0.707084957913509 0.707084957913509 0.007856499532372323 0
+  name "arena"
+  size 8 8 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 0
+    baseColorMap ImageTexture {
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+Robot {
+}
+SurveyorSrv1 {
+  hidden position_0_0 -34.07999998723814
+  hidden position_0_1 -34.079999990715784
+  hidden position_0_2 -34.079999997477614
+  hidden position_0_3 -34.080000004604365
+  hidden position_0_4 -34.08000001197845
+  hidden position_0_5 -34.07999998676597
+  hidden position_0_6 -34.07999999044947
+  hidden position_0_7 -34.07999999750515
+  hidden position_0_8 -34.08000000495399
+  hidden position_0_9 -34.08000001255835
+  hidden linearVelocity_0 0.07002868165536402 -4.158636032488218e-06 -2.2021602933505025e-08
+  hidden angularVelocity_0 0.00015257909523224854 -2.412050146458038e-07 -1.5021013606503955e-05
+  hidden translation_4 0.049 0.0394 0.014
+  hidden rotation_4 0 -1 0 3.6191118558393796
+  hidden linearVelocity_4 0.07002924140900146 -2.3532395917026984e-06 5.8846229089581925e-06
+  hidden angularVelocity_4 0.00014984027340436996 4.999999756068397 0.00018234988126845743
+  hidden translation_5 0.0245 0.0394 0.014
+  hidden rotation_5 0 -0.9999999999999999 0 3.6191118523617347
+  hidden linearVelocity_5 0.07002918924386262 -2.2255339301389127e-06 5.878820994986716e-06
+  hidden angularVelocity_5 0.00014983847404885007 4.999999757608081 0.00018235018044186383
+  hidden translation_6 0 0.0394 0.014
+  hidden rotation_6 0 -1 0 3.6191118455999045
+  hidden linearVelocity_6 0.07002913810677937 -2.0978281903576144e-06 5.873019080748777e-06
+  hidden angularVelocity_6 0.00014983667244500593 4.999999759162246 0.00018235047675038699
+  hidden translation_7 -0.0245 0.0394 0.014
+  hidden rotation_7 0 -1 0 3.6191118384731538
+  hidden linearVelocity_7 0.07002908977960962 -1.970122253442728e-06 5.86721717121818e-06
+  hidden angularVelocity_7 0.00014983486890678274 4.999999760755727 0.0001823507655547864
+  hidden translation_8 -0.049 0.0394 0.014
+  hidden rotation_8 0 -1 0 3.61911183109907
+  hidden linearVelocity_8 0.0700290415230022 -1.8424162708139502e-06 5.8614152586678e-06
+  hidden angularVelocity_8 0.00014983306468832603 4.999999762350149 0.00018235105419785744
+  hidden translation_9 0.049 -0.0394 0.014
+  hidden rotation_9 0 -1 0 3.6191118563115494
+  hidden linearVelocity_9 0.07002831065645497 -2.3530487491415234e-06 -5.9028630804203305e-06
+  hidden angularVelocity_9 0.00014984255632682797 4.999999747198079 0.00018234433223229487
+  hidden translation_10 0.0245 -0.0394 0.014
+  hidden rotation_10 0 -1 0 3.619111852628046
+  hidden linearVelocity_10 0.07002826860779542 -2.225342478537073e-06 -5.908664993725653e-06
+  hidden angularVelocity_10 0.00014984071142998428 4.999999748879535 0.00018234461862739345
+  hidden translation_11 0 -0.0394 0.014
+  hidden rotation_11 0 -1 0 3.619111845572371
+  hidden linearVelocity_11 0.07002822908069907 -2.0976361621638493e-06 -5.914466905565523e-06
+  hidden angularVelocity_11 0.00014983888359141709 4.999999750596186 0.00018234490377907645
+  hidden translation_12 -0.0245 -0.0394 0.014
+  hidden rotation_12 0 -0.9999999999999999 0 3.619111838123531
+  hidden linearVelocity_12 0.07002819033871908 -1.9699298808516852e-06 -5.92026881962582e-06
+  hidden angularVelocity_12 0.00014983707232874162 4.999999752323914 0.00018234518941270497
+  hidden translation_13 -0.049 -0.0394 0.014
+  hidden rotation_13 0 -1 0 3.619111830519168
+  hidden linearVelocity_13 0.0700281518203537 -1.8422235819511145e-06 -5.926070734307848e-06
+  hidden angularVelocity_13 0.00014983526055757467 4.999999754054597 0.00018234547383717551
+  translation 0.06522002232592705 -0.20999942729530252 2.0499701373078683
+  rotation 0.36250458044726785 -0.9318173733767783 0.017516044871833922 0.00011608309537074738
+  controller "my_controller"
+}
