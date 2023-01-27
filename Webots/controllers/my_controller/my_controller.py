@@ -1,6 +1,6 @@
 """my_controller controller."""
 
-from controller import Robot, Motor, DistanceSensor, PositionSensor
+from controller import Robot, Motor, DistanceSensor, PositionSensor, Camera
 from typing import Union
 
 class RobotMotor(Motor):
@@ -112,6 +112,13 @@ class Position():
         self.__wheel_sensor08_position_sensor.getValue(),
         self.__wheel_sensor09_position_sensor.getValue()]
 
+class Mycamera(Camera):
+    def __init__(self,name):
+        super().__init__(name)
+        self.enablePointCloud()
+
+    def camera(self):
+        return self.getRangeImage()
 
 class Robotfighter(Robot):
     def __init__(self):
@@ -119,19 +126,8 @@ class Robotfighter(Robot):
         self.motors=RobotMotors()
         self.distances=Distance()
         self.positions=Position()
+        self.camera=Mycamera()
 
-    # def go(self):
-    #     self.motors.go_back()
-
-    # def go_front(self):
-    #     self.motors.go_front()
-    
-    # def go_turnright(self):
-    #     self.motors.go_turnright()
-    
-    # def go_turnleft(self):
-    #     self.motors.go_turnleft()
-    
     def run(self, direction):
         if direction=="F":
             self.motors.go_front()
